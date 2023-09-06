@@ -1,0 +1,21 @@
+# Add Your Open AI Key Here:
+open_ai_key: "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"
+
+# Choose your desired Open AI model
+gpt_model: "gpt-3.5-turbo-0613"
+
+# Max word length of each podcast chunk
+chunk_size: 1000
+
+whisper_model: "base"
+
+# Prompt to get the model to summarize a chunk of text from a podcast
+summary_prompt: "You are an AI assistant that summarizes podcasts. Give the following podcast transcript an informative summary. For each important point, feel free to write between 75-100 words explaining the details discussed of the podcast.
+There is no need to give boilerplate information. Ignore any information on advertisements within the podcast, but do not leave out information on important guests or background on the conversation.
+The audience of the summary is knowledgable about the material discussed, and the details can be communicated at a technical level if needed. Provide as much detail as possible.
+Transcript:"
+
+# Prompt to get the model to combine the summaries from each chunk of the podcast transcript
+chunk_prompt: "You are an AI assistant that summarizes podcasts. Given the sequence of summaries of parts of a podcast transcript, please combine them in a clear way while preserving the information they provide.
+Make the final summary flow well and make it readable, but provide as much detail as possible. Keep your response to within around 600 words.
+Summaries:"
